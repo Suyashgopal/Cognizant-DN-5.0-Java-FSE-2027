@@ -6,9 +6,6 @@ public class LightOffCommand implements Command {
     public LightOffCommand(Light light) {
         this.light = light;
     }
-
-
     public void execute() {
-        light.turnoff();
-    }
+        light.turnoff();}
 }

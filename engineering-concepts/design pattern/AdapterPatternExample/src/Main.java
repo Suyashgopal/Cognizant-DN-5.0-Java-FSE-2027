@@ -7,15 +7,10 @@ public class Main {
 
         PaymentProcessor p1 =
                 new PaypalAdapter(new PaypalGateway());
-
-
         p1.processpayment(500);
-
-
 
         PaymentProcessor p2 =
                 new StripeAdapter(new StripeGateway());
-
 
         p2.processpayment(1000);
     }
